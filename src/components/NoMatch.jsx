@@ -1,10 +1,23 @@
-function NoMatch() {
-  return (
-    <dvi>
-      <h1>404 - Page not found</h1>
+import { useRouteError, NavLink } from "react-router-dom";
 
-      <p>Sorry, the page you are looking for does not exist xdxdxdxd.</p>
-    </dvi>
+function NoMatch() {
+  const error = useRouteError();
+  console.error(error);
+
+  return (
+    <div id="error-page">
+      <h1>Oops!</h1>
+      <p>Something went wrong</p>
+      <p>
+        <i style={{ color: "red" }}>
+          {error.status} {error.statusText || error.message}
+        </i>
+      </p>
+
+      <div>
+        <NavLink to="/">Go back to home page?</NavLink>
+      </div>
+    </div>
   );
 }
 
