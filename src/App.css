@@ -1,0 +1,98 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+}
+
+#container-outlet {
+  padding: 0 20px;
+}
+
+#container-add-book {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+
+  #div2 {
+    margin-left: 40px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+
+  #book-details {
+    margin-left: 40px;
+    margin-bottom: 10;
+    padding: 0 20px;
+  }
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#nav-bar {
+  background-color: rgb(162, 162, 162);
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#nav-bar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px; /* Adjust the margin as needed for space between items */
+}
+
+/* change hover color later */
+
+#nav-bar a:hover {
+  color: #282828;
+}
+
+#nav-bar a.active {
+  color: #282828;
+}
+
+#nav-bar a.active:hover {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+input {
+  display: block;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+button {
+  display: block;
+  margin: 10px 0;
+  padding: 5px;
+
+  color: black;
+  font-weight: bold;
+}
+
+li {
+  font-weight: bold;
+}
