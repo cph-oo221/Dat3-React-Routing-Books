@@ -10,6 +10,10 @@ function MainLayout() {
           <NavLink to="/find-book">Find Book</NavLink>
         </nav>
 
+        <div>
+          <h1 style={{ textAlign: "center", color: "red" }}>React Router</h1>
+        </div>
+
         <div id="container-outlet">
           <Outlet />
         </div>
