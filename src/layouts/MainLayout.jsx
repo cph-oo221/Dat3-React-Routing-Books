@@ -5,7 +5,7 @@ function MainLayout() {
     <div id="container">
       <div>
         <div>
-          <h1 style={{ textAlign: "center" }}>React Router books :</h1>
+          <h1 style={{ textAlign: "center" }}>React Router books ::</h1>
         </div>
         <nav id="nav-bar">
           <NavLink to="/books">Books</NavLink>
