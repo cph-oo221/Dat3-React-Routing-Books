@@ -17,7 +17,7 @@ function App() {
 
   const routes = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<MainLayout />}>
+      <Route path="/" element={<MainLayout />} errorElement={<NoMatch />}>
         <Route
           path="books"
           element={<Books getBooks={bookFacade.getBooks} />}
@@ -30,8 +30,6 @@ function App() {
           path="find-book"
           element={<FindBook findBook={bookFacade.findBook} />}
         />
-
-        <Route path="*" element={<NoMatch />} />
       </Route>
     )
   );
