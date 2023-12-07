@@ -106,3 +106,8 @@ button {
 li {
   font-weight: bold;
 }
+
+#footer {
+  background-color: rgb(162, 162, 162);
+  margin-top: 50px;
+}

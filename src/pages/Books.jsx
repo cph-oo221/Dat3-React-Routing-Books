@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Details from "../components/Details";
 
 function Books({ getBooks }) {
@@ -12,9 +12,9 @@ function Books({ getBooks }) {
       {getBooks().map((book) => (
         <ul key={book.id}>
           <li>
-            <NavLink to={`/books`} onClick={() => setBook(book)}>
+            <Link to={`/books`} onClick={() => setBook(book)}>
               {book.title}
-            </NavLink>
+            </Link>
           </li>
         </ul>
       ))}

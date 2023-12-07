@@ -1,4 +1,4 @@
-import { useRouteError, NavLink } from "react-router-dom";
+import { useRouteError, Link } from "react-router-dom";
 
 function NoMatch() {
   const error = useRouteError();
@@ -20,7 +20,7 @@ function NoMatch() {
       </p>
 
       <div>
-        <NavLink to="/">Go back to home page?</NavLink>
+        <Link to="/">Go back to home page?</Link>
       </div>
     </div>
   );
