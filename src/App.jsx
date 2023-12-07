@@ -16,6 +16,7 @@ function App() {
   const bookFacade = returnVal;
 
   const routes = createBrowserRouter(
+    { basename: "/" },
     createRoutesFromElements(
       <Route path="/" element={<MainLayout />} errorElement={<NoMatch />}>
         <Route
