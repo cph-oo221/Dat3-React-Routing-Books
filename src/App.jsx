@@ -21,14 +21,17 @@ function App() {
         <Route
           path="books"
           element={<Books getBooks={bookFacade.getBooks} />}
+          errorElement={<NoMatch />}
         />
         <Route
           path="add-book"
           element={<AddBook addBook={bookFacade.addBook} />}
+          errorElement={<NoMatch />}
         />
         <Route
           path="find-book"
           element={<FindBook findBook={bookFacade.findBook} />}
+          errorElement={<NoMatch />}
         />
       </Route>
     )
