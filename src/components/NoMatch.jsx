@@ -4,8 +4,7 @@ function NoMatch() {
   const error = useRouteError();
   console.error(error);
 
-  // Provide default values if error is undefined
-  const status = error?.status || "Unknown";
+  const status = error?.status || " ";
   const statusText =
     error?.statusText || error?.message || "An unknown error occurred";
 
@@ -20,7 +19,7 @@ function NoMatch() {
       </p>
 
       <div>
-        <Link to="/">Go back to home page?</Link>
+        <Link to="/">Go back to home page ?</Link>
       </div>
     </div>
   );
